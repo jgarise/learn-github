@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พันธกิจประจำสัปดาห์ - กาฬสินธุ์ 2025 ✨</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="mission-page">
+    <div class="animated-background"></div>
+    
+    <div class="page-container">
+        <header class="mission-header">
+            <div class="header-content">
+                <div class="group-info animate-fade-in-up">
+                    <div class="avatar" id="groupAvatar">🌟</div>
+                    <div class="group-details">
+                        <h1 class="group-name" id="groupName">กลุ่มแสงแรก</h1>
+                        <p class="week-info">สัปดาห์ที่ <span id="currentWeek">1</span> | <span id="currentDate">วันนี้</span></p>
+                    </div>
+                </div>
+                
+                <div class="mission-progress animate-fade-in-up delay-200">
+                    <div class="progress-steps" id="progressSteps">
+                        <div class="step active" data-step="1">
+                            <div class="step-icon">✅</div>
+                            <span class="step-label">เช็คชื่อ</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-icon">📢</div>
+                            <span class="step-label">ประกาศ</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-icon">📸</div>
+                            <span class="step-label">ส่งงาน</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <div class="step-icon">📝</div>
+                            <span class="step-label">รายงาน</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="mission-content" id="missionContent">
+            <!-- Step content will be dynamically loaded -->
+        </main>
+
+        <footer class="mission-footer">
+            <div class="footer-actions">
+                <button class="btn btn-outline" id="backButton">
+                    ← กลับหน้าเลือกกลุ่ม
+                </button>
+                <button class="btn btn-secondary" id="logoutButton">
+                    ออกจากระบบ
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="elegant-spinner"></div>
+        <p class="loading-text">กำลังโหลด...</p>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/mission.js"></script>
+</body>
+</html>

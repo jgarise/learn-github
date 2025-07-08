@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปผลประจำสัปดาห์ - กาฬสินธุ์ 2025 ✨</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="summary-page">
+    <div class="animated-background"></div>
+    
+    <div class="page-container">
+        <header class="summary-header">
+            <div class="header-content">
+                <div class="completion-badge animate-bounce-in">
+                    <div class="badge-icon">🎉</div>
+                    <h1 class="badge-title">พันธกิจสำเร็จ!</h1>
+                    <p class="badge-subtitle">สัปดาห์ที่ <span id="weekNumber">28</span></p>
+                </div>
+                
+                <div class="group-info animate-fade-in-up delay-300">
+                    <div class="avatar" id="groupAvatar">🌟</div>
+                    <div class="group-details">
+                        <h2 class="group-name" id="groupName">กลุ่มแสงแรก</h2>
+                        <p class="completion-date" id="completionDate">วันนี้</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="summary-content">
+            <div class="summary-grid stagger-children">
+                <!-- Check-in Summary -->
+                <div class="summary-card">
+                    <div class="card-header">
+                        <div class="card-icon">✅</div>
+                        <h3 class="card-title">สรุปการเช็คชื่อ</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="attendance-stats" id="attendanceStats">
+                            <div class="stat-item present">
+                                <span class="stat-number" id="presentCount">1</span>
+                                <span class="stat-label">มา</span>
+                            </div>
+                            <div class="stat-item absent">
+                                <span class="stat-number" id="absentCount">3</span>
+                                <span class="stat-label">ไม่มา</span>
+                            </div>
+                            <div class="stat-item new">
+                                <span class="stat-number" id="newMemberCount">1</span>
+                                <span class="stat-label">สมาชิกใหม่</span>
+                            </div>
+                        </div>
+                        <div class="member-list" id="presentMembers">
+                            <p class="list-title">สมาชิกที่มา:</p>
+                            <ul class="member-names">
+                                <li>สมชาย ใจดี</li>
+                            </ul>
+                        </div>
+                        <div class="new-member-list" id="newMembers">
+                            <p class="list-title">สมาชิกใหม่:</p>
+                            <ul class="member-names">
+                                <li>สมพงษ์ มีความสุข</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement Summary -->
+                <div class="summary-card">
+                    <div class="card-header">
+                        <div class="card-icon">📢</div>
+                        <h3 class="card-title">สรุปการประกาศ</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="announce-stats">
+                            <div class="big-number">
+                                <span class="number" id="announceCount">1</span>
+                                <span class="unit">คน</span>
+                            </div>
+                            <p class="stats-label">ได้รับการประกาศ</p>
+                        </div>
+                        <div class="announce-list" id="announceList">
+                            <p class="list-title">รายชื่อ:</p>
+                            <ul class="member-names">
+                                <li>อลิซ สมิท</li>
+                            </ul>
+                        </div>
+                        <div class="progress-indicator">
+                            <div class="progress progress-lg">
+                                <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                            </div>
+                            <p class="progress-text">20% ของเป้าหมาย 5 คน</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Summary -->
+                <div class="summary-card">
+                    <div class="card-header">
+                        <div class="card-icon">📷</div>
+                        <h3 class="card-title">สรุปการส่งงาน</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="media-status success" id="mediaStatus">
+                            <div class="status-icon">✅</div>
+                            <p class="status-text">อัพโหลดเรียบร้อย</p>
+                        </div>
+                        <div class="file-info" id="fileInfo">
+                            <div class="file-item">
+                                <span class="file-icon">📸</span>
+                                <span class="file-name">mission_photo.jpg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report Summary -->
+                <div class="summary-card full-width">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">สรุปรายงานผล</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="report-content" id="reportContent">
+                            <blockquote class="report-text">
+                                "ได้แบ่งปันรากฐานความเชื่อกับ อลิซ สมิท เธอรู้สึกหนุนใจและมีความสุขมาก เราได้อธิษฐานร่วมกันและท้าทายให้เธอเติบโตในความเชื่อ"
+                            </blockquote>
+                        </div>
+                        <div class="report-tags">
+                            <span class="tag">แบ่งปันรากฐานความเชื่อ</span>
+                            <span class="tag">หนุนใจ</span>
+                            <span class="tag">ท้าทาย</span>
+                            <span class="tag">อธิษฐาน</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="summary-footer">
+            <div class="footer-actions">
+                <button class="btn btn-outline" id="backToMissionBtn">
+                    ← กลับไปแก้ไขพันธกิจ
+                </button>
+                <button class="btn btn-success btn-lg" id="startNewMissionBtn">
+                    🚀 เริ่มพันธกิจใหม่
+                </button>
+                <button class="btn btn-secondary" id="logoutButton">
+                    ออกจากระบบ
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="elegant-spinner"></div>
+        <p class="loading-text">กำลังโหลด...</p>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/weekly-summary.js"></script>
+</body>
+</html>

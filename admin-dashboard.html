@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แดชบอร์ดผู้ดูแลระบบ - กาฬสินธุ์ 2025 ✨</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="admin-page">
+    <div class="animated-background"></div>
+    
+    <div class="page-container">
+        <header class="admin-header">
+            <div class="header-content">
+                <div class="admin-info animate-fade-in-up">
+                    <div class="avatar admin-avatar">👑</div>
+                    <div class="admin-details">
+                        <h1 class="admin-name" id="adminName">ผู้ดูแลระบบหลัก</h1>
+                        <p class="admin-subtitle">แดชบอร์ดการติดตาม | สัปดาห์ที่ <span id="currentWeek">28</span></p>
+                    </div>
+                </div>
+                
+                <div class="refresh-info animate-fade-in-up delay-200">
+                    <div class="auto-refresh">
+                        <span class="refresh-icon animate-pulse">🔄</span>
+                        <span class="refresh-text">อัพเดททุก 30 วินาที</span>
+                    </div>
+                    <div class="last-update">
+                        อัพเดทล่าสุด: <span id="lastUpdate">เมื่อสักครู่</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <div class="overview-stats animate-fade-in-up delay-300">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">กลุ่มทั้งหมด</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-info">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">กลุ่มที่พร้อม</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-info">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">ความคืบหน้ารวม</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📢</div>
+                    <div class="stat-info">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">การประกาศรวม</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="groups-dashboard stagger-children">
+                <h2 class="section-title">สถานะกลุ่มทั้งหมด</h2>
+                
+                <div class="dashboard-grid" id="dashboardGrid">
+                    <!-- Group dashboard cards will be dynamically generated -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="admin-footer">
+            <div class="footer-actions">
+                <button class="btn btn-outline" id="exportReportBtn">
+                    📄 ส่งออกรายงาน
+                </button>
+                <button class="btn btn-outline" id="backButton">
+                    ← กลับหน้าเข้าสู่ระบบ
+                </button>
+                <button class="btn btn-secondary" id="logoutButton">
+                    ออกจากระบบ
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="elegant-spinner"></div>
+        <p class="loading-text">กำลังโหลด...</p>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
