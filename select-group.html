@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือกกลุ่มพันธกิจ - กาฬสินธุ์ 2025 ✨</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="select-group-page">
+    <div class="animated-background"></div>
+    
+    <div class="page-container">
+        <header class="page-header">
+            <div class="header-content">
+                <h1 class="page-title animate-fade-in-up">เลือกกลุ่มพันธกิจของคุณ</h1>
+                <p class="page-subtitle animate-fade-in-up delay-200">ประกาศข่าวประเสริฐให้ครบ 5 คนก่อนเช็คชื่อ</p>
+                <div class="user-info animate-fade-in-up delay-300">
+                    <div class="avatar" id="userAvatar">👤</div>
+                    <span class="user-name" id="userName">กลุ่มของคุณ</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="groups-grid stagger-children" id="groupsGrid">
+                <!-- Group cards will be dynamically generated -->
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-actions">
+                <button class="btn btn-outline" id="backButton">
+                    ← กลับหน้าเข้าสู่ระบบ
+                </button>
+                <button class="btn btn-secondary" id="logoutButton">
+                    ออกจากระบบ
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="elegant-spinner"></div>
+        <p class="loading-text">กำลังโหลด...</p>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/group-selection.js"></script>
+</body>
+</html>

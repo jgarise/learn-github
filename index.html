@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าร่วมนิมิตชีวิตสุขสันต์กาฬสินธุ์ 2025 ✨</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="login-page">
+    <div class="animated-background"></div>
+    
+    <div class="login-container">
+        <div class="magic-login-card">
+            <div class="login-header">
+                <h1 class="login-title">เข้าร่วมนิมิตชีวิตสุขสันต์กาฬสินธุ์ 2025 ✨</h1>
+                <p class="login-subtitle">ระบบเวิร์กโฟลว์ส่งงานกลุ่มพันธกิจ</p>
+            </div>
+            
+            <form class="login-form" id="magicLoginForm">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="accessCode" 
+                        class="magic-input" 
+                        placeholder="รหัสกลุ่ม (เช่น GROUP001) หรือ รหัสแอดมิน (เช่น ADMIN001)"
+                        required
+                        autocomplete="off"
+                    >
+                    <div class="input-border"></div>
+                </div>
+                
+                <button type="submit" class="cta-button">
+                    <span class="button-text">เข้าสู่ระบบ</span>
+                    <div class="button-ripple"></div>
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <p class="help-text">💡 ใส่รหัสของคุณเพื่อเข้าสู่ระบบ</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="elegant-spinner"></div>
+        <p class="loading-text">กำลังเข้าสู่ระบบ...</p>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
